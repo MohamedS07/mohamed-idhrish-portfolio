@@ -71,8 +71,6 @@ header {
   width: 100%;
 }
 
-/* --- About Hero Section --- */
-/* --- About Hero Section --- */
 .about-hero {
   min-height: 60vh;
   padding: 140px 8% 60px;
@@ -207,16 +205,98 @@ header {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94A3B8;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+@media (max-width: 480px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(15, 23, 42, 0.98);
+    height: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .logo {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
   .navigation {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+.navigation a {
+        display: inline-block;
+        font-size: 0.85rem;
+        margin: 2px;
+        padding: 8px 16px;
+        color: #E2E8F0;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        color: white;
+    }
+
+  .navigation a::after {
     display: none;
   }
 
-  .about-content h1 {
-    font-size: 2.4rem;
+  .about-hero {
+    padding: 220px 5% 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
-  .section-title {
+  .about-hero .section-title {
     font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .about-hero .section-title::after {
+    margin: 10px auto 0;
+  }
+
+  .about-brief p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  .about-section,
+  .info-section {
+    padding: 40px 5%;
+  }
+
+  .info-card {
+    padding: 20px;
   }
 }

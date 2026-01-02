@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Header --- */
 header {
     position: fixed;
     top: 0;
@@ -122,7 +121,7 @@ header {
     border-color: #8B5CF6;
     color: white;
     transform: translateY(-5px);
-    
+
 }
 
 .skills-list li i {
@@ -142,24 +141,95 @@ header {
     font-family: 'Outfit', sans-serif;
 }
 
-@media (max-width: 768px) {
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94A3B8;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 480px) {
     header {
-        padding: 20px 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 5%;
+        background: rgba(15, 23, 42, 0.98);
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+        font-size: 1.6em;
+        margin-bottom: 15px;
     }
 
     .navigation {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+.navigation a {
+        display: inline-block;
+        font-size: 0.85rem;
+        margin: 2px;
+        padding: 8px 16px;
+        color: #E2E8F0;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        color: white;
+    }
+
+    .navigation a::after {
         display: none;
     }
 
     .page {
-        padding: 120px 5% 40px;
+        padding: 220px 5% 40px;
     }
 
     .page h2.title {
-        font-size: 2.2em;
+        font-size: 2em;
+        text-align: center;
+        display: block;
+        margin: 0 auto 40px;
+    }
+
+    .page h2.title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .category-title {
+        text-align: center;
     }
 
     .skills-list {
         justify-content: center;
+        gap: 15px;
+    }
+
+    .skills-list li {
+        padding: 10px 20px;
+        font-size: 0.95em;
     }
 }

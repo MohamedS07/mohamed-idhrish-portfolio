@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Header --- */
 header {
     position: fixed;
     top: 0;
@@ -155,20 +154,79 @@ header {
     color: #A78BFA;
 }
 
-@media (max-width: 768px) {
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94A3B8;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 480px) {
     header {
-        padding: 20px 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 5%;
+        background: rgba(15, 23, 42, 0.98);
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+        font-size: 1.6em;
+        margin-bottom: 15px;
     }
 
     .navigation {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+.navigation a {
+        display: inline-block;
+        font-size: 0.85rem;
+        margin: 2px;
+        padding: 8px 16px;
+        color: #E2E8F0;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        color: white;
+    }
+
+    .navigation a::after {
         display: none;
     }
 
     .page {
-        padding: 120px 5% 40px;
+        padding: 220px 5% 40px;
     }
 
     .contact-box {
-        padding: 30px;
+        width: 400px;
+        padding: 30px 20px;
+    }
+
+    .contact-info-item {
+        padding: 12px;
+        gap: 15px;
     }
 }
