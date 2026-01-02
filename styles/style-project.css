@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0F172A;
+  color: #E2E8F0;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: white;
+  cursor: default;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.navigation a {
+  font-size: 1em;
+  color: #94A3B8;
+  text-decoration: none;
+  margin-left: 35px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navigation a.active,
+.navigation a:hover {
+  color: white;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  transition: width 0.3s ease;
+}
+
+.navigation a.active::after,
+.navigation a:hover::after {
+  width: 100%;
+}
+
+.projects-section {
+  padding: 140px 8% 60px;
+  min-height: 100vh;
+}
+
+.projects-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.projects-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  display: block;
+  /* Ensure it behaves like a block */
+  text-decoration: none;
+  /* Remove underline */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.project-card p {
+  color: #CBD5E1;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(139, 92, 246, 0.15);
+  color: #A78BFA;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85em;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  transition: 0.3s;
+}
+
+.project-card:hover .tag {
+  background: #8B5CF6;
+  color: white;
+  border-color: transparent;
+}
+
+/* View Button (optional addition for future) */
+.view-btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.view-btn::after {
+  content: '→';
+  margin-left: 5px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.project-card:hover .view-btn::after {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .projects-section {
+    padding: 120px 5% 40px;
+  }
+}

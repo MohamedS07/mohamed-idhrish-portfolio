@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    color: #E2E8F0;
+    overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    cursor: default;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navigation a {
+    font-size: 1em;
+    color: #94A3B8;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navigation a.active,
+.navigation a:hover {
+    color: white;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+    transition: width 0.3s ease;
+}
+
+.navigation a.active::after,
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.page {
+    padding: 140px 8% 60px;
+    min-height: 100vh;
+}
+
+.page h2.title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.page h2.title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-list li {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #CBD5E1;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-list li:hover {
+    border-color: #8B5CF6;
+    color: white;
+    transform: translateY(-5px);
+    
+}
+
+.skills-list li i {
+    color: #A78BFA;
+    font-size: 1.3em;
+}
+
+.skills-category {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .page {
+        padding: 120px 5% 40px;
+    }
+
+    .page h2.title {
+        font-size: 2.2em;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
