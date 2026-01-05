@@ -37,13 +37,7 @@ header {
     cursor: default;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.logo span {
-    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 .navigation a {
