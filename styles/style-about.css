@@ -189,6 +189,15 @@ header {
   color: #94a3b8;
   margin-bottom: 8px;
 }
+.year{
+  background-color: #8b5cf6;
+  height: 30px;
+  width:140px;
+  border-radius: 15px;
+}
+.year p{
+  text-align: center;
+}
 
 .info-card p {
   color: #cbd5e1;
