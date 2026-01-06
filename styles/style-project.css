@@ -253,4 +253,8 @@ footer {
     max-width: 350px;
     margin: 0 auto;
   }
+  .web-img{
+    width: 300px;
+    height: 150px;
+  }
 }
