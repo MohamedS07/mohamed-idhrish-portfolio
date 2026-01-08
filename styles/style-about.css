@@ -189,19 +189,27 @@ header {
   color: #94a3b8;
   margin-bottom: 8px;
 }
-.year{
-  background-color: #8b5cf6;
-  height: 30px;
-  width:140px;
-  border-radius: 15px;
-}
-.year p{
-  text-align: center;
+
+.year {
+  display: inline-block;
+  background: #8B5CF6;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85em;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  transition: 0.3s;
+  z-index: 1;
+  position: relative;
+  top: 2px;
+
 }
 
 .info-card p {
   color: #cbd5e1;
   line-height: 1.6;
+  position: relative;
+  top: 10px;
 }
 
 footer {
@@ -251,18 +259,18 @@ footer {
     margin: 0;
   }
 
-.navigation a {
-        display: inline-block;
-        font-size: 0.85rem;
-        margin: 2px;
-        padding: 8px 16px;
-        color: #E2E8F0;
-    }
+  .navigation a {
+    display: inline-block;
+    font-size: 0.85rem;
+    margin: 2px;
+    padding: 8px 16px;
+    color: #E2E8F0;
+  }
 
-    .navigation a:hover,
-    .navigation a.active {
-        color: white;
-    }
+  .navigation a:hover,
+  .navigation a.active {
+    color: white;
+  }
 
   .navigation a::after {
     display: none;
@@ -298,4 +306,25 @@ footer {
   .info-card {
     padding: 20px;
   }
+  .info-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
 }

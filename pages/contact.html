@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,22 +25,57 @@
     <section class="page">
         <h2 class="title">Contact</h2>
 
-        <div class="contact-box">
+        <div class="contact-container">
+            <!-- Contact Info Section -->
+            <div class="contact-info-wrapper">
+                <h3>Get In Touch</h3>
+                <div class="contact-info-item">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="details">
+                        <h4>Email</h4>
+                        <p><a href="mailto:mohamedidhrish215@gmail.com">mohamedidhrish215@gmail.com</a></p>
+                    </div>
+                </div>
 
-            <div class="contact-info-item">
-                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                <div class="details">
-                    <h4>Email</h4>
-                    <p><a href="mailto:mohamedidhrish215@gmail.com">mohamedidhrish215@gmail.com</a></p>
+                <div class="contact-info-item">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="details">
+                        <h4>Phone</h4>
+                        <p>+91 9994543851</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="details">
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/MohamedS07" target="_blank">MohamedS07</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="details">
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/mohamed-idhrish-s-3bb074254/" target="_blank">Mohamed
+                                Idhrish</a></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="contact-info-item">
-                <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                <div class="details">
-                    <h4>Phone</h4>
-                    <p>+91 9994543851</p>
-                </div>
+            <!-- Contact Form Section -->
+            <div class="contact-form-wrapper">
+                <h3>Send Message</h3>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <div class="input-box-single">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box-single">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
             </div>
         </div>
 

@@ -235,7 +235,7 @@ footer {
     .logo {
         font-size: 1.6em;
         margin-bottom: 15px;
-        
+
     }
 
     .navigation {
@@ -306,7 +306,7 @@ footer {
 
 @media screen and (max-width: 1024px) and (min-width: 427px) {
 
-   
+
 
     .content p {
         font-size: 1rem;
@@ -320,4 +320,22 @@ footer {
     }
 
 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 1s ease-out forwards;
 }

@@ -98,12 +98,13 @@ header {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -113,14 +114,18 @@ header {
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
-  cursor: pointer;
+  height: 100%;
 }
-.web-img{
-  width: 550px;
-  height: 300px;
+
+.web-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   position: relative;
   border-radius: 10px;
+  margin-top: 15px;
 }
+
 .project-card:hover {
   transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.05);
@@ -142,6 +147,33 @@ header {
   margin-bottom: 25px;
   line-height: 1.7;
   font-size: 0.95rem;
+  flex-grow: 1;
+  /* Pushes the button to the bottom */
+}
+
+.link {
+  background-color: #8B5CF6;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* Added border-radius for better look */
+  margin-top: auto;
+  /* Ensures button stays at bottom */
+  align-self: center;
+  /* Center the button */
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #7C3AED;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: white;
 }
 
 .tags-container {
@@ -152,19 +184,18 @@ header {
 
 .tag {
   display: inline-block;
-  background: rgba(139, 92, 246, 0.15);
-  color: #A78BFA;
+  background: #8B5CF6;
+  color: #fff;
   padding: 6px 14px;
   border-radius: 50px;
   font-size: 0.85em;
   border: 1px solid rgba(139, 92, 246, 0.3);
   transition: 0.3s;
-}
+  z-index: 1;
+  position: relative;
+  top: 2px;
+  width: 60px;
 
-.project-card:hover .tag {
-  background: #8B5CF6;
-  color: white;
-  border-color: transparent;
 }
 
 footer {
@@ -212,18 +243,18 @@ footer {
     margin: 0;
   }
 
-.navigation a {
-        display: inline-block;
-        font-size: 0.85rem;
-        margin: 2px;
-        padding: 8px 16px;
-        color: #E2E8F0;
-    }
+  .navigation a {
+    display: inline-block;
+    font-size: 0.85rem;
+    margin: 2px;
+    padding: 8px 16px;
+    color: #E2E8F0;
+  }
 
-    .navigation a:hover,
-    .navigation a.active {
-        color: white;
-    }
+  .navigation a:hover,
+  .navigation a.active {
+    color: white;
+  }
 
   .navigation a::after {
     display: none;
@@ -253,8 +284,16 @@ footer {
     max-width: 350px;
     margin: 0 auto;
   }
-  .web-img{
-    width: 300px;
-    height: 150px;
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .web-img {
+    height: 200px;
+    /* Smaller height for mobile */
   }
 }

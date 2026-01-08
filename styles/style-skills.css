@@ -96,51 +96,152 @@ header {
     border-radius: 5px;
 }
 
-.skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+./* Skills Section Styles - YouTube Style Progress Bars */
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+    min-height: 100vh;
 }
 
-.skills-list li {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 15px 30px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: #CBD5E1;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.skills-list li:hover {
-    border-color: #8B5CF6;
-    color: white;
-    transform: translateY(-5px);
-
-}
-
-.skills-list li i {
-    color: #A78BFA;
-    font-size: 1.3em;
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 .skills-category {
-    margin-bottom: 50px;
+    margin-bottom: 4rem;
 }
 
 .category-title {
-    font-size: 1.4rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
     font-weight: 400;
-    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
 }
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.skill-icon {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.skill-name {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.progress-container {
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 12px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
+    animation: skillFill 2s ease-out forwards;
+    position: relative;
+}
+
+.percent-circle {
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    width: 45px;
+    height: 45px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Skill-specific colors, icons, and animations */
+.html-row .skill-icon { color: #ff5733; }
+.html-progress .skill-fill { background: #ff5733; }
+.html-progress .percent-circle { border-color: #ff5733; }
+@keyframes htmlFill { to { width: 90%; } }
+
+.css-row .skill-icon { color: #33c4ff; }
+.css-progress .skill-fill { background: #33c4ff; }
+.css-progress .percent-circle { border-color: #33c4ff; }
+@keyframes cssFill { to { width: 85%; } }
+
+.js-row .skill-icon { color: #f7df1e; }
+.js-progress .skill-fill { background: #f7df1e; }
+.js-progress .percent-circle { border-color: #f7df1e; color: #333; }
+@keyframes jsFill { to { width: 60%; } }
+
+.responsive-row .skill-icon { color: #28a745; }
+.responsive-progress .skill-fill { background: #28a745; }
+.responsive-progress .percent-circle { border-color: #28a745; }
+@keyframes responsiveFill { to { width: 75%; } }
+
+.fastapi-row .skill-icon { color: #9c27b0; }
+.fastapi-progress .skill-fill { background: #9c27b0; }
+.fastapi-progress .percent-circle { border-color: #9c27b0; }
+@keyframes fastapiFill { to { width: 70%; } }
+
+.mysql-row .skill-icon { color: #007bff; }
+.mysql-progress .skill-fill { background: #007bff; }
+.mysql-progress .percent-circle { border-color: #007bff; }
+@keyframes mysqlFill { to { width: 65%; } }
+
+.python-row .skill-icon { color: #ff9500; }
+.python-progress .skill-fill { background: #ff9500; }
+.python-progress .percent-circle { border-color: #ff9500; }
+@keyframes pythonFill { to { width: 80%; } }
+
+.github-row .skill-icon { color: #333; }
+.github-progress .skill-fill { background: #333; }
+.github-progress .percent-circle { border-color: #333; }
+@keyframes githubFill { to { width: 75%; } }
+
+
+.html-progress .skill-fill { animation-name: htmlFill; animation-delay: 0.2s; }
+.css-progress .skill-fill { animation-name: cssFill; animation-delay: 0.4s; }
+.js-progress .skill-fill { animation-name: jsFill; animation-delay: 0.6s; }
+.responsive-progress .skill-fill { animation-name: responsiveFill; animation-delay: 0.8s; }
+.fastapi-progress .skill-fill { animation-name: fastapiFill; animation-delay: 1s; }
+.mysql-progress .skill-fill { animation-name: mysqlFill; animation-delay: 1.2s; }
+.python-progress .skill-fill { animation-name: pythonFill; animation-delay: 1.4s; }
+.github-progress .skill-fill { animation-name: githubFill; animation-delay: 1.6s; }
+
+
+
+
 
 footer {
     width: 100%;
