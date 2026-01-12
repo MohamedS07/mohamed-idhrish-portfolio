@@ -418,6 +418,13 @@ footer {
     margin-top: 15px;
 }
 
+.els-img{
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+    left: 170px;
+}
 .project-card:hover {
     transform: translateY(-10px);
     border-color: rgba(15, 95, 209, 0.4);
@@ -502,6 +509,24 @@ footer {
     width: 50px;
 
 }
+.domain-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    margin: 60px 0 30px;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+.domain-title::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
 
 .skills-section,
 .skills,
@@ -566,7 +591,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     align-items: stretch;
-    /* Forces all cards to match tallest row height [web:8] */
 }
 
 .skill-card {
@@ -598,12 +622,11 @@ footer {
     font-size: 18px;
     color: #ffffff;
     margin: 0 0 15px 0;
-    /* Consistent spacing [web:12] */
 }
 
 .skill-progress {
     margin-top: auto;
-    /* Pushes to bottom consistently [web:17] */
+
 }
 
 .skill-title {
@@ -626,15 +649,13 @@ footer {
     border-radius: 10px;
     animation: fillBar 1.5s ease forwards;
     width: 0;
-    /* Start at 0 width */
+
 }
 
-/* Trigger animation when #skills is the target (navbar click) */
+
 #skills:target .progress-fill {
     animation: none;
-    /* Reset */
     width: 0;
-    /* Force reflow hack purely in CSS is hard, but we can re-assign animation */
     animation: fillBar 1.5s ease forwards;
 }
 
@@ -703,7 +724,6 @@ footer {
     color: #0f5fd1;
 }
 
-/* ---------------- LIFE SKILLS ---------------- */
 .life-skills {
     background: #ffffff;
 }
@@ -830,13 +850,11 @@ footer {
     border-radius: 12px;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.02);
-    /* Slight background for items */
 }
 
 .contact-info-item:hover {
     background: rgba(255, 255, 255, 0.05);
     transform: translateX(5px);
-    /* Subtle hover effect */
 }
 
 .icon {
@@ -875,7 +893,6 @@ footer {
     color: #0ea5e9;
 }
 
-/* Contact Form Styles */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -901,7 +918,6 @@ footer {
 
 .contact-form textarea {
     resize: vertical;
-    /* Allow vertical resize only */
     min-height: 120px;
     margin-bottom: 20px;
 }
@@ -924,9 +940,7 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     align-self: center;
-    /* Center the button */
     margin: 0 auto;
-    /* Ensure centering */
 }
 
 .btn:hover {
@@ -959,7 +973,6 @@ footer {
 
     .projects-container {
         grid-template-columns: 1fr;
-        /* Stack projects on tablet/mobile */
     }
 
     .section-title {
@@ -968,12 +981,10 @@ footer {
 
     .projects-title {
         font-size: 2rem;
-        /* Reduce from 2.8em */
     }
 
     .page h2.title {
         font-size: 2rem;
-        /* Reduce from 2.8em */
     }
 
     .skills-section,
@@ -982,7 +993,6 @@ footer {
     .life-skills,
     .gallery {
         padding: 60px 5%;
-        /* Reduce padding */
     }
 
     .page {
