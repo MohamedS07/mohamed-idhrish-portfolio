@@ -42,6 +42,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .navigation a {
@@ -419,7 +420,7 @@ footer {
 }
 
 .els-img{
-    height: 210px;
+    height: 240px;
     width: 200px;
     border-radius: 10px;
     position: relative;
