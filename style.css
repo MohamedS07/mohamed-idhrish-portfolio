@@ -1168,6 +1168,12 @@ footer {
     .els-img {
         height: 150px;
     }
+    .contact-info-item a{
+        font-size: 12px;
+    }
+    .contact-info-item p{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 427px) {
