@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -170,8 +170,10 @@ header {
 
 .photo {
     position: relative;
+    max-width: 100%;
     width: 450px;
-    height: 450px;
+    height: auto;
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,8 +181,8 @@ header {
 }
 
 .photo img {
-    width: 370px;
-    height: 370px;
+    width: 100%;
+    height: 100%;
     border-radius: 20%;
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -419,13 +421,15 @@ footer {
     margin-top: 15px;
 }
 
-.els-img{
-    height: 240px;
-    width: 200px;
+.els-img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
     border-radius: 10px;
     position: relative;
-    left: 170px;
+    /* Removed absolute positioning to allow natural flow */
 }
+
 .project-card:hover {
     transform: translateY(-10px);
     border-color: rgba(15, 95, 209, 0.4);
@@ -510,6 +514,7 @@ footer {
     width: 50px;
 
 }
+
 .domain-title {
     font-family: 'Outfit', sans-serif;
     font-size: 2rem;
@@ -615,7 +620,7 @@ footer {
 
 .skill-icon {
     font-size: 42px;
-    color: #0f5fd1;
+    /* Color removed to allow individual styling */
 }
 
 .skill-card h3 {
@@ -1101,11 +1106,22 @@ footer {
         width: 240px;
         height: 240px;
         margin: 0 auto;
+        margin-top: 30px;
+        position: relative;
+        left: 10px;
     }
 
     .photo img {
         width: 100%;
         height: 100%;
+    }
+
+    .photo:hover {
+        transform: scale(1.05);
+    }
+
+    .photo:hover img {
+        box-shadow: 0 0 30px rgba(15, 95, 209, 0.6);
     }
 
     .content {
@@ -1125,24 +1141,95 @@ footer {
     .content p {
         font-size: 0.95rem;
     }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .social-links a:hover {
+        transform: translateY(-5px);
+        background: #0f5fd1;
+        color: white;
+    }
+
+    .photo:hover {
+        transform: scale(1.05);
+    }
+
+    .photo:hover img {
+        box-shadow: 0 0 30px rgba(15, 95, 209, 0.6);
+    }
+
+    .web-img {
+        height: 150px;
+    }
+
+    .els-img {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 427px) {
+    header {
+        padding: 15px 4%;
+    }
 
+    .logo {
+        font-size: 1.5rem;
+    }
 
+    .navigation a {
+        margin-left: 20px;
+        font-size: 0.9rem;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 130px;
+        gap: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
     .content p {
         font-size: 1rem;
+        max-width: 80%;
     }
 
     .photo {
-        width: 340px;
-        height: 220px;
+        width: 380px;
+        height: 380px;
         margin: 0 auto;
-        margin-bottom: 120px;
     }
 
 
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 150px 5% 40px;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .skills-grid,
+    .english-grid,
+    .life-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        width: 80%;
+    }
 }
 
 @keyframes fadeIn {
@@ -1189,4 +1276,121 @@ footer {
 .skill-card .skill-icon,
 .skill-percentage {
     color: #fff;
+}
+
+.certificate {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.certification-card {
+    width: 100%;
+    max-width: 450px;
+}
+
+.certification-card h3,
+span {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.certification-card img {
+    border-radius: 10px;
+}
+
+.certification-card h3 {
+
+    color: #fff;
+}
+
+.academic-card {
+    width: 100%;
+    max-width: 600px;
+}
+
+.academic-card h3 {
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.academic-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.download-box {
+    display: inline-block;
+}
+
+.download {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0f5fd1;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: 10px;
+
+}
+
+.download:hover {
+    transform: translateY(-3px);
+}
+
+/* Skill Icon Brand Colors - High Specificity */
+.skill-card .skill-icon.text-html {
+    color: #E34F26 !important;
+}
+
+.skill-card .skill-icon.text-css {
+    color: #1572B6 !important;
+}
+
+.skill-card .skill-icon.text-js {
+    color: #F7DF1E !important;
+}
+
+.skill-card .skill-icon.text-responsive {
+    color: #61DAFB !important;
+}
+
+.skill-card .skill-icon.text-python {
+    color: #3776AB !important;
+}
+
+.skill-card .skill-icon.text-mysql {
+    color: #4479A1 !important;
+}
+
+.skill-card .skill-icon.text-postgres {
+    color: #336791 !important;
+}
+
+.skill-card .skill-icon.text-fastapi {
+    color: #009688 !important;
+}
+
+.skill-card .skill-icon.text-java {
+    color: #007396 !important;
+}
+
+.skill-card .skill-icon.text-github {
+    color: #ffffff !important;
+}
+
+.skill-card .skill-icon.text-vercel {
+    color: #ffffff !important;
+}
+
+.skill-card .skill-icon.text-supabase {
+    color: #3ECF8E !important;
 }
