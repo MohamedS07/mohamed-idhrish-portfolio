@@ -18,6 +18,8 @@
       <a href="index.html">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#internship">Internship</a>
+      <a href="#certifications">Certifications</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -41,74 +43,77 @@
       <div class="btn-box">
         <a href="#about" class="btn">More About Me</a>
       </div>
-      <div class="download-box"><a href="./assets/Mohamed idhrish_Resume.pdf" download class="download">
-          Download Resume
-        </a></div>
+
     </div>
 
     <div class="photo fade-in">
       <img src="./assets/DSC00743 (1).jpg" alt="Profile Picture" />
     </div>
   </section>
-  <section id="about" class="about-hero fade-in">
-    <div class="about-brief">
-      <h2 class="section-title">About Me</h2>
-      <p>
-        I am <strong>Mohamed Idhrish</strong> from Theni district. I have
-        completed my <strong>Diploma in Computer Engineering</strong> at
-        Central Polytechnic College and I am currently a student at
-        <strong>Freshworks STS Software Academy.</strong>
-        At Freshworks STS Software Academy, I am focusing on web development,
-        English communication, and life skills. I have learnt HTML, CSS,
-        JavaScript, PostgreSQL, and FastAPI. I started my journey by building
-        a static website, which helped me understand the fundamentals of
-        frontend development and responsive design.
-      </p>
-      <p>
-        Later, I developed a FastAPI backend project and went on to build a
-        full-stack application, integrating both frontend and backend
-        technologies. I am also learning problem-solving using Python, which
-        is improving my logical thinking and coding skills. My primary area of
-        interest is becoming a Full-Stack Developer
-      </p>
-    </div>
-  </section>
-  <section class="info-section fade-in">
-    <h2 class="section-title">Internship</h2>
-    <div class="info-container">
-      <div class="info-card">
-        <h3>Python Development</h3>
-        <span class="year">2024</span>
-        <p>Internship in Python Development at Tech Power Solutions.</p>
+  <section id="about" class="about-mosaic fade-in">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+
+      <div class="mosaic-grid">
+        <!-- Tile 1: Roots & Family (Large) -->
+        <div class="mosaic-tile tile-large roots">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-heart"></i></div>
+            <h3>The Root</h3>
+            <p><strong>I am Mohamed Idhrish.</strong> I am from <strong>Thamaraikulam</strong> in <strong>Theni
+                District</strong>. I lost my father eleven years ago. After that, my uncles supported me and took care
+              of my education. Their constant support became my biggest motivation.</p>
+          </div>
+          <div class="tile-accent"></div>
+        </div>
+
+        <!-- Tile 2: Quote (Tall) -->
+        <div class="mosaic-tile tile-tall quote">
+          <div class="tile-content">
+            <p class="quote-text">" Instead of focusing only on the result, we must <strong>trust the process</strong>
+              and stay consistent."</p>
+          </div>
+        </div>
+
+        <!-- Tile 3: The Transformation (Large) -->
+        <div class="mosaic-tile tile-large transformation">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-rocket"></i></div>
+            <h3>The Transformation</h3>
+            <p>Moving from a quiet village to the fast-paced "universe" of <strong>Chennai</strong> redefined my
+              mindset. Joining <strong>Freshworks STS Software Academy</strong> as a <strong>Software Development
+                Fellow</strong> has been the catalyst for my growth, turning my passion for technology into
+              professional excellence.</p>
+          </div>
+        </div>
+
+        <!-- Tile 4: Education (Full) -->
+        <div class="mosaic-tile tile-full education">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>Completed my <strong>SSLC</strong> at <strong> St. Anne's Higher Secondary School</strong> (2022) before
+              earning a <strong>Diploma in Computer Engineering</strong>
+              from <strong>Central Polytechnic College</strong> (2022 - 2025). </p>
+            <!-- This academic foundation provided
+              me with core knowledge in software systems, hardware, and logical problem-solving.</p> -->
+          </div>
+        </div>
+
+        <!-- Tile 5: Vision (Full) -->
+        <div class="mosaic-tile tile-full vision">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-flag-checkered"></i></div>
+            <h3>The Vision</h3>
+            <p>My goal is to become a proficient <strong>Full-Stack Developer</strong> and build a stable career in the
+              technology industry, ultimately honoring my family's support through my success.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="info-section fade-in">
-    <h2 class="section-title">Academic Project</h2>
-    <div class="info-container">
-      <div class="project-card academic-card">
-        <h3>Phishing Website Detection Using Machine Learning</h3>
-        <div><video id="phishing_video" src="./assets/Phishing.mp4" autoplay loop muted>
-          </video></div>
-        <p>
-          Phishing Website Detection Using Machine Learning Developed a model
-          to identify phishing websites using supervised learning algorithms,
-          enhancing online security through automated threat detection
-        </p>
-      </div>
+
     </div>
   </section>
 
-  <section class="info-section fade-in">
-    <h2 class="section-title">Certifications</h2>
-    <div class="info-container">
-      <div class="project-card certification-card">
-        <img src="./assets/Certificate.png" alt="" class="certificate">
-        <h3>PHP and MySQL Training</h3>
-        <span class="institution">Spoken Tutorial Project, IIT Bombay</span>
-      </div>
-    </div>
-  </section>
 
 
   <section id="projects" class="projects-section fade-in">
@@ -137,6 +142,17 @@
         </p>
         <a href="https://uzhavan-connect.vercel.app/" class="link" target="_blank">View</a>
       </div>
+      <div class="project-card academic-card">
+        <span class="tag">Academic</span>
+        <h3 id="academic-title">Phishing Website Detection Using Machine Learning</h3>
+        <div><video id="phishing_video" src="./assets/Phishing.mp4" autoplay loop muted>
+          </video></div>
+        <p>
+          Phishing Website Detection Using Machine Learning Developed a model
+          to identify phishing websites using supervised learning algorithms,
+          enhancing online security through automated threat detection
+        </p>
+      </div>
     </div>
 
     <h2 class="domain-title">Life Skills</h2>
@@ -153,6 +169,53 @@
       </div>
     </div>
   </section>
+
+  <section id="internship" class="internship-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Internship</h2>
+      <div class="internship-grid">
+        <div class="internship-card">
+          <div class="internship-header">
+            <div class="company-logo">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="company-info">
+              <h3>Tech Power Solutions</h3>
+              <p class="role">Python Development Intern</p>
+              <p class="duration">2024</p>
+            </div>
+          </div>
+          <div class="internship-body">
+            <p>Hands-on internship focused on <strong>Python Development</strong>, gaining practical experience in
+              building logic and understanding software development workflows at Tech Power Solutions.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <div class="cert-image-wrapper">
+            <img src="./assets/certificate.png" alt="PHP and MySQL Certificate" class="cert-image">
+          </div>
+          <div class="cert-info">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>PHP and MySQL Training</h3>
+            <p>Spoken Tutorial Project, IIT Bombay</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section id="skills" class="skills fade-in">
     <h1 class="projects-title">Skills</h1>
@@ -409,11 +472,7 @@
             </p>
           </div>
         </div>
-        <div class="about-actions">
-          <a href="./assets/Mohamed idhrish_Resume.pdf" download class="btn-resume">
-            Download Resume
-          </a>
-        </div>
+
       </div>
 
       <div class="contact-form-wrapper">
