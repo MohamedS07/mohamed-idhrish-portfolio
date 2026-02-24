@@ -439,12 +439,14 @@ footer {
     position: relative;
     /* Removed absolute positioning to allow natural flow */
 }
-#spark{
-    width: 200px;
-    position: relative;
-    margin-top: 15px;
-    left: 160px;
 
+#spark {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 15px auto 0;
+    position: relative;
+    border-radius: 10px;
 }
 
 .project-card:hover {
@@ -1889,6 +1891,11 @@ span {
         width: 100%;
         max-width: 800px;
     }
+
+    #spark {
+        width: 180px;
+        margin: 15px auto 0;
+    }
 }
 
 /* Correct Mobile Responsive (768px down to 425px) */
@@ -1989,6 +1996,11 @@ span {
     .cert-card {
         width: 100%;
     }
+
+    #spark {
+        width: 140px;
+        margin: 12px auto 0;
+    }
 }
 
 /* Smallest Mobile (480px) */
@@ -2068,9 +2080,14 @@ span {
         font-size: 0.9rem;
         /* Slightly smaller for very narrow screens */
     }
-    
+
+    #spark {
+        width: 120px;
+        margin: 10px auto 0;
+    }
 }
-.english-card p{
+
+.english-card p {
     color: #CBD5E1;
     font-size: 16px;
     text-align: center;
