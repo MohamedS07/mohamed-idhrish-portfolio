@@ -1,191 +1,222 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohamed Idhrish's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html" class="logo">Mohamed Idhrish</a>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#internship">Internship</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Idhrish's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <section class="home">
-      <div class="content fade-in">
-        <h4>Hello, I'm</h4>
-        <h2>Mohamed <span>Idhrish</span></h2>
+<body>
+  <header>
+    <a href="index.html" class="logo">Mohamed Idhrish</a>
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="content fade-in">
+      <h4>Hello, I'm</h4>
+      <h2>Mohamed <span>Idhrish</span></h2>
+      <p>
+        Aspiring Full-Stack Developer interested in building full web
+        applications with clean design and good functionality.
+      </p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mohamed-idhrish-s/" target="_blank"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/MohamedS07" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="btn-box">
+        <a href="#about" class="btn">More About Me</a>
+      </div>
+    </div>
+
+    <div class="photo fade-in">
+      <img src="./assets/DSC00743 (1).jpg" alt="Profile Picture" />
+    </div>
+  </section>
+  <section id="about" class="about-mosaic fade-in">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="mosaic-grid">
+        <!-- 1. The Beginning (Large - 2 Cols) -->
+        <div class="mosaic-tile tile-large roots">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-heart"></i></div>
+            <h3>The Beginning</h3>
+            <p>
+              I am <strong>Mohamed Idhrish</strong>, from <strong>Thamaraikulam</strong> in <strong>Theni
+                District.</strong> My father passed away eleven years ago. After that, my uncles supported me and took
+              care of my studies.
+            </p>
+          </div>
+          <div class="tile-media">
+            <img src="./assets/Vaigai_Dam.jpg" alt="Theni" />
+          </div>
+        </div>
+
+        <!-- 2. The Quote (Tall - Spans 2 Rows) -->
+        <div class="mosaic-tile tile-tall quote" style="grid-column: span 2;">
+          <div class="tile-content">
+            <!-- <div class="quote-mark">“</div> -->
+            <p class="quote-text">
+              "Instead of focusing only on the result, we must <strong>trust the process and stay
+                consistent.</strong>"
+            </p>
+            <!-- <div class="quote-mark" style="transform: rotate(180deg)">“</div> -->
+          </div>
+        </div>
+
+        <!-- 3. Education (Large - 4/6 Cols) -->
+        <div class="mosaic-tile tile-large education">
+          <div class="tile-media">
+            <img src="./assets/cpt.webp" alt="Education" />
+          </div>
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>
+              Completed <strong>SSLC</strong> at <strong>St. Anne's</strong> (2022). Pursued a <strong>Diploma in
+                Computer Engineering</strong> at <strong>Central Polytechnic College</strong> (2022-2025).
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Internship & Certifications Row (50/50 Split) -->
+        <div class="mosaic-tile tile-half internship">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fab fa-python"></i></div>
+            <h3>Internship</h3>
+            <p>
+              <strong>Tech Power Solutions</strong> (2024)<br>
+              Hands-on experience in <strong>Python Development</strong>, building logic, and professional
+              workflows.<br>
+              <a href="./assets/Internship_Certificate.pdf" target="_blank" class="cert-link">View Certificate</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="mosaic-tile tile-half credentials">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Certifications</h3>
+            <p>
+              <strong>PHP and MySQL Training</strong><br>
+              Spoken Tutorial Project, IIT Bombay<br>
+              <a href="./assets/Certificate.png" target="_blank" class="cert-link">View Certificate</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. The Transition (Full - 6 Cols) -->
+        <div class="mosaic-tile tile-full transformation">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-rocket"></i></div>
+            <h3>The Transition</h3>
+            <p>
+              From a small village to Chennai, my journey reshaped my ambitions. Joining <strong>Freshworks STS
+                Academy</strong> turned my passion for tech into professional excellence.
+            </p>
+          </div>
+          <div class="tile-media">
+            <img src="./assets/Namma_Chennai.jpg" alt="Chennai" />
+          </div>
+        </div>
+
+        <!-- 6. English Proficiency (Full - 6 Cols) -->
+        <div class="mosaic-tile tile-full english-proficiency">
+          <div class="tile-media">
+            <img src="./assets/EF TEST.png" alt="EF SET Certificate"
+              style="object-fit: contain; background: #f8fafc;" />
+          </div>
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-language"></i></div>
+            <h3>English Proficiency</h3>
+            <p>
+              <strong>EF SET Certification – B1 Level</strong><br>
+              Achieved B1 Intermediate level in English, demonstrating strong reading, listening, speaking, and writing
+              skills for professional and academic communication.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. Life Skills (Full - 6 Cols) -->
+        <div class="mosaic-tile tile-full life-skills">
+          <div class="tile-content">
+            <div class="tile-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Life Skills & Projects</h3>
+            <p>
+              During the <strong>Squad Power</strong> presentation, I learned how to speak boldly and confidently in
+              front of everyone. For the <strong>Product Building Challenge</strong>, we developed a mechanism-based
+              dustbin for hygienic disposal, teaching me the power of teamwork.
+            </p>
+            <p style="margin-top: 10px; font-weight: 600; color: #0f5fd1; font-size: 0.95rem;">
+              Both experiences improved my communication, teamwork, and confidence in building real-world solutions.
+            </p>
+          </div>
+          <div class="tile-media media-gallery">
+            <div class="gallery-inner">
+              <img src="./assets/squadpower.jpeg" alt="Squad Power" class="gallery-img" />
+              <img src="./assets/product photo.jpeg" alt="Spark Bin" class="gallery-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Vision (Full - 6 Cols) -->
+        <div class="mosaic-tile tile-full vision">
+          <div class="tile-media">
+            <img src="./assets/full_copy.jpg" alt="Vision" />
+          </div>
+          <div class="tile-content">
+            <div class="tile-icon"><i style="color: #0f5fd1;" class="fas fa-flag-checkered"></i></div>
+            <h3 style="color: black;">The Vision</h3>
+            <p style="color: black;">
+              To become a proficient <strong>Full-Stack Developer</strong>, ultimately honoring my family's unwavering
+              support through technical excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section fade-in">
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="./assets/electro-max.png" alt="Electro Max project" class="web-img" />
+        <h2>Electro Max</h2>
         <p>
-          Aspiring Full-Stack Developer interested in building full web
-          applications with clean design and good functionality.
+          Electro Max is a simple electronics showcase website that displays
+          laptops and smartphones with clear images and basic details.
         </p>
-
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/mohamed-idhrish-s/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/MohamedS07" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
-        <div class="btn-box">
-          <a href="#about" class="btn">More About Me</a>
-        </div>
+        <a href="https://mohameds07.github.io/static_web_project/" class="link" target="_blank">View</a>
       </div>
 
-      <div class="photo fade-in">
-        <img src="./assets/DSC00743 (1).jpg" alt="Profile Picture" />
+      <div class="project-card">
+        <img src="./assets/uzhavan-connect.png" alt="Uzhavan Connect project" class="web-img" />
+        <h2>Uzhavan Connect</h2>
+        <p>
+          A platform to connect farmers, NGOs, and donors using FastAPI &
+          MySQL, enabling direct support and interaction.
+        </p>
+        <a href="https://uzhavan-connect.vercel.app/" class="link" target="_blank">View</a>
       </div>
-    </section>
-    <section id="about" class="about-mosaic fade-in">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-
-        <div class="mosaic-grid">
-          <!-- Tile 1: Roots & Family (Large) -->
-          <div class="mosaic-tile tile-large roots">
-            <div class="tile-content">
-              <div class="tile-icon"><i class="fas fa-heart"></i></div>
-              <h3>The Beginning</h3>
-              <p>
-                I am <strong>Mohamed Idhrish</strong>, from
-                <strong>Thamaraikulam</strong> in
-                <strong>Theni District.</strong> My father passed away eleven
-                years ago. After that, my uncles supported me and took care of
-                my education. Their constant support and encouragement have been
-                my greatest motivation in life.
-              </p>
-            </div>
-            <div class="tile-accent"></div>
-          </div>
-
-          <!-- Tile 2: Quote (Tall) -->
-          <div class="mosaic-tile tile-tall quote">
-            <div class="tile-content">
-              <p class="quote-text">
-                " Instead of focusing only on the result, we must
-                <strong>trust the process</strong> and stay consistent."
-              </p>
-            </div>
-          </div>
-
-          <!-- Tile 3: The Transformation (Large) -->
-          <div class="mosaic-tile tile-large transformation">
-            <div class="tile-content">
-              <div class="tile-icon"><i class="fas fa-rocket"></i></div>
-              <h3>The Transition</h3>
-              <p>
-                From a small village to the city of Chennai, My journey reshaped
-                my mindset and ambitions. Joining
-                <strong>Freshworks STS Software Academy</strong> as a student
-                became a turning point in my growth. It transformed my passion
-                for technology into strong professional skills and prepared me
-                for a successful career.
-              </p>
-            </div>
-          </div>
-
-          <!-- Tile 4: Education (Full) -->
-          <div class="mosaic-tile tile-full education">
-            <div class="tile-content">
-              <div class="tile-icon"><i class="fas fa-graduation-cap"></i></div>
-              <h3>Education</h3>
-              <p>
-                I completed my <strong>SSLC</strong> at
-                <strong>St. Anne’s Higher Secondary School</strong> in
-                <strong>2022</strong>. After that, I pursued a
-                <strong>Diploma in Computer Engineering</strong> at
-                <strong>Central Polytechnic College</strong> from
-                <strong>2022 to 2025</strong>
-              </p>
-            </div>
-          </div>
-
-          <!-- Tile 5: Vision (Full) -->
-          <div class="mosaic-tile tile-full vision">
-            <div class="tile-content">
-              <div class="tile-icon"><i class="fas fa-flag-checkered"></i></div>
-              <h3>The Vision</h3>
-              <p>
-                My goal is to become a proficient
-                <strong>Full-Stack Developer</strong> and build a stable career
-                in the technology industry, ultimately honoring my family's
-                support through my success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section fade-in">
-      <h1 class="projects-title">My Projects</h1>
-
-      <h2 class="domain-title">Tech</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <span class="tag">Tech</span>
-          <img
-            src="./assets/electro-max.png"
-            alt="Electro Max project"
-            class="web-img"
-          />
-          <h2>Electro Max</h2>
-          <p>
-            Electro Max is a simple electronics showcase website that displays
-            laptops and smartphones with clear images and basic details.
-          </p>
-          <a
-            href="https://mohameds07.github.io/static_web_project/"
-            class="link"
-            target="_blank"
-            >View</a
-          >
-        </div>
-
-        <div class="project-card">
-          <span class="tag">Tech</span>
-          <img
-            src="./assets/uzhavan-connect.png"
-            alt="Uzhavan Connect project"
-            class="web-img"
-          />
-          <h2>Uzhavan Connect</h2>
-          <p>
-            A platform to connect farmers, NGOs, and donors using FastAPI &
-            MySQL, enabling direct support and interaction.
-          </p>
-          <a
-            href="https://uzhavan-connect.vercel.app/"
-            class="link"
-            target="_blank"
-            >View</a
-          >
-        </div>
-        <!-- <div class="project-card academic-card">
+      <!-- <div class="project-card academic-card">
           <span class="tag">Academic</span>
           <h3 id="academic-title">
             Phishing Website Detection Using Machine Learning
@@ -205,332 +236,164 @@
             enhancing online security through automated threat detection
           </p>
         </div> -->
+    </div>
+
+  </section>
+
+
+  <section id="skills" class="skills fade-in">
+    <h1 class="projects-title">Skills</h1>
+    <h3 class="skill-category">Frontend & Design</h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon text-html"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
       </div>
 
-      <h2 class="domain-title">Life Skills</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <span class="els-tag">ELS</span>
-          <img
-            src="./assets/squadpower.jpeg"
-            alt="Squad Power Presentation"
-            class="web-img"
-          />
-          <h2>Squad Power Presentation</h2>
-          <p>
-            During the Squad Power presentation, I learnt how to speak boldly
-            and confidently in front of everyone.
-          </p>
-        </div>
-        <div class="project-card">
-          <span class="els-tag">ELS</span>
-          <img
-            src="./assets/product photo.jpeg"
-            alt="Spark Bin project"
-            class="web-img"
-            id="spark"
-          />
-          <h2>Product Building Challenge</h2>
-          <p>
-            During the Product Building Challenge, we developed a
-            mechanism-based dustbin for hygienic and easy waste disposal. From
-            this experience, I learned teamwork and how to convert an idea into
-            a practical working model.
-          </p>
-          <!-- <a href="https://sparkbin.vercel.app/" class="link" target="_blank">View</a> -->
-        </div>
-      </div>
-    </section>
-
-    <section id="internship" class="internship-section fade-in">
-      <div class="container">
-        <h2 class="section-title">Internship</h2>
-        <div class="internship-grid">
-          <div class="internship-card">
-            <div class="internship-header">
-              <div class="company-logo">
-                <i class="fab fa-python"></i>
-              </div>
-              <div class="company-info">
-                <h3>Tech Power Solutions</h3>
-                <p class="role">Python Development Intern</p>
-                <p class="duration">2024</p>
-              </div>
-            </div>
-            <div class="internship-body">
-              <p>
-                Hands-on internship focused on
-                <strong>Python Development</strong>, gaining practical
-                experience in building logic and understanding software
-                development workflows at Tech Power Solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications" class="certifications-section fade-in">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certifications-grid">
-          <div class="cert-card">
-            <div class="cert-image-wrapper">
-              <img
-                src="./assets/Certificate.png"
-                alt="PHP and MySQL Certificate"
-                class="cert-image"
-              />
-            </div>
-            <div class="cert-info">
-              <div class="cert-icon">
-                <i class="fas fa-certificate"></i>
-              </div>
-              <h3>PHP and MySQL Training</h3>
-              <p>Spoken Tutorial Project, IIT Bombay</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills fade-in">
-      <h1 class="projects-title">Skills</h1>
-      <h2 class="domain-title">Tech</h2>
-      <h3 class="skill-category">Frontend & Design</h3>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon text-html"><i class="fab fa-html5"></i></div>
-          <h3>HTML5</h3>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon text-css"><i class="fab fa-css3-alt"></i></div>
-          <h3>CSS3</h3>
-        </div>
-
-        
-
-        <div class="skill-card">
-          <div class="skill-icon text-responsive">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <h3>Responsive Design</h3>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon text-js"><i class="fab fa-js"></i></div>
-          <h3>JavaScript</h3>
-        </div>
-      </div>
-      <h3 class="skill-category">Backend</h3>
-      <div class="skills-grid">
-        
-
-        <div class="skill-card">
-          <div class="skill-icon text-mysql">
-            <i class="devicon-mysql-plain"></i>
-          </div>
-          <h3>MySQL</h3>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon text-postgres">
-            <i class="devicon-postgresql-plain"></i>
-          </div>
-          <h3>PostgresSQL</h3>
-        </div>
-<div class="skill-card">
-          <div class="skill-icon text-python">
-            <i class="fab fa-python"></i>
-          </div>
-          <h3>Python</h3>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon text-fastapi"><i class="fas fa-bolt"></i></div>
-          <h3>FastAPI</h3>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon text-java">
-            <i class="fa-brands fa-java"></i>
-          </div>
-          <h3>Java(Basics)</h3>
-        </div>
+      <div class="skill-card">
+        <div class="skill-icon text-css"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
       </div>
 
-      <h3 class="skill-category">Version Control & Tools</h3>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon text-github">
-            <i class="fab fa-github"></i>
-          </div>
-          <h3>GitHub</h3>
+      <div class="skill-card">
+        <div class="skill-icon text-js"><i class="fab fa-js"></i></div>
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+    <h3 class="skill-category">Backend</h3>
+    <div class="skills-grid">
+
+
+      <div class="skill-card">
+        <div class="skill-icon text-mysql">
+          <i class="devicon-mysql-plain"></i>
         </div>
-        <!-- <div class="skill-card">
+        <h3>MySQL</h3>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon text-postgres">
+          <i class="devicon-postgresql-plain"></i>
+        </div>
+        <h3>PostgresSQL</h3>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon text-python">
+          <i class="fab fa-python"></i>
+        </div>
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon text-fastapi"><i class="fas fa-bolt"></i></div>
+        <h3>FastAPI</h3>
+      </div>
+    </div>
+
+    <h3 class="skill-category">Devops & Tools</h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon text-github">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3>GitHub</h3>
+      </div>
+      <!-- <div class="skill-card">
           <div class="skill-icon text-github">
             <i class="fab fa-github"></i>
           </div>
           <h3>GitHub</h3>
         </div> -->
-        <div class="skill-card">
-          <div class="skill-icon text-vercel">
-            <i class="fa-solid fa-cloud"></i>
-          </div>
-          <h3>Vercel</h3>
+      <div class="skill-card">
+        <div class="skill-icon text-vercel">
+          <i class="fa-solid fa-cloud"></i>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon text-supabase">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <h3>Supabase</h3>
-        </div>
+        <h3>Vercel</h3>
       </div>
-    </section>
-
-    <section class="english-skills fade-in">
-      <div class="section-header">
-        <h2 class="section-title">English Skills</h2>
+      <div class="skill-card">
+        <div class="skill-icon text-supabase">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3>Supabase</h3>
       </div>
+      <div class="skill-card">
+        <div class="skill-icon text-figma">
+          <i class="fa-brands fa-figma"></i>
+        </div>
+        <h3>Figma</h3>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon text-canva">
+          <i class="devicon-canva-original"></i>
+        </div>
+        <h3>Canva</h3>
+      </div>
+    </div>
+  </section>
 
-      <div class="english-grid">
-        <div class="english-card">
-          <div class="english-icon">
-            <i class="fas fa-book-open"></i>
-          </div>
 
-          <h3>Reading</h3>
+  <section id="contact" class="page fade-in">
+    <h2 class="title">Contact</h2>
 
-          <div class="star-rating">
-            <!-- <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i> -->
-            <p>B1 Intermediate</p>
+    <div class="contact-container">
+      <div class="contact-info-wrapper">
+        <h3>Get In Touch</h3>
+        <div class="contact-info-item">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="details">
+            <h4>Email</h4>
+            <p>
+              <a href="mailto:mohamedidhrish215@gmail.com">mohamedidhrish215@gmail.com</a>
+            </p>
           </div>
         </div>
 
-        <div class="english-card">
-          <div class="english-icon">
-            <i class="fas fa-headphones"></i>
-          </div>
-
-          <h3>Listening</h3>
-
-          <div class="star-rating">
-            <p>A1 Beginner</p>
+        <div class="contact-info-item">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="details">
+            <h4>Phone</h4>
+            <p>+91 9994543851</p>
           </div>
         </div>
 
-        <div class="english-card">
-          <div class="english-icon">
-            <i class="fas fa-pen-nib"></i>
-          </div>
-
-          <h3>Writing</h3>
-
-          <div class="star-rating">
-            <p>B1 Intermediate</p>
+        <div class="contact-info-item">
+          <div class="icon"><i class="fa-brands fa-github"></i></div>
+          <div class="details">
+            <h4>GitHub</h4>
+            <p>
+              <a href="https://github.com/MohamedS07" target="_blank">MohamedS07</a>
+            </p>
           </div>
         </div>
 
-        <div class="english-card">
-          <div class="english-icon">
-            <i class="fas fa-microphone"></i>
-          </div>
-
-          <h3>Speaking</h3>
-
-          <div class="star-rating">
-            <p>B1 Intermediate</p>
+        <div class="contact-info-item">
+          <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="details">
+            <h4>LinkedIn</h4>
+            <p>
+              <a href="https://www.linkedin.com/in/mohamed-idhrish-s/" target="_blank">Mohamed Idhrish</a>
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section id="contact" class="page fade-in">
-      <h2 class="title">Contact</h2>
 
-      <div class="contact-container">
-        <div class="contact-info-wrapper">
-          <h3>Get In Touch</h3>
-          <div class="contact-info-item">
-            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-            <div class="details">
-              <h4>Email</h4>
-              <p>
-                <a href="mailto:mohamedidhrish215@gmail.com"
-                  >mohamedidhrish215@gmail.com</a
-                >
-              </p>
-            </div>
+      <div class="contact-form-wrapper">
+        <h3>Send Message</h3>
+        <form action="https://formspree.io/f/mnjjaaap" method="POST" class="contact-form">
+          <div class="input-box-single">
+            <input type="text" name="name" placeholder="Full Name" required />
           </div>
-
-          <div class="contact-info-item">
-            <div class="icon"><i class="fa-solid fa-phone"></i></div>
-            <div class="details">
-              <h4>Phone</h4>
-              <p>+91 9994543851</p>
-            </div>
+          <div class="input-box-single">
+            <input type="email" name="email" placeholder="Email Address" required />
           </div>
-
-          <div class="contact-info-item">
-            <div class="icon"><i class="fa-brands fa-github"></i></div>
-            <div class="details">
-              <h4>GitHub</h4>
-              <p>
-                <a href="https://github.com/MohamedS07" target="_blank"
-                  >MohamedS07</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="details">
-              <h4>LinkedIn</h4>
-              <p>
-                <a
-                  href="https://www.linkedin.com/in/mohamed-idhrish-s/"
-                  target="_blank"
-                  >Mohamed Idhrish</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-wrapper">
-          <h3>Send Message</h3>
-          <form
-            action="https://formspree.io/f/mnjjaaap"
-            method="POST"
-            class="contact-form"
-          >
-            <div class="input-box-single">
-              <input type="text" name="name" placeholder="Full Name" required />
-            </div>
-            <div class="input-box-single">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <input type="submit" value="Send Message" class="btn" />
-          </form>
-        </div>
+          <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
       </div>
-    </section>
-    <footer>
-      <p>&copy; 2025 Mohamed Idhrish. All Rights Reserved.</p>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Mohamed Idhrish. All Rights Reserved.</p>
+  </footer>
+</body>
+
 </html>
